@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import re
 
 if os.path.exists('env.py'):
     import env
@@ -66,7 +67,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = ['8000-renatolemes-drfapi-3rjzqa8ghro.ws-eu102.gitpod.io',
 'localhost', 
 'drf-api-renato-6a4382026611.herokuapp.com',
-'drf-api-renato-9b9c5c90ac56.herokuapp.com',]
+os.environ.get('ALLOWED_HOST'),]
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
