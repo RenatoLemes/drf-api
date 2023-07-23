@@ -67,7 +67,8 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = ['8000-renatolemes-drfapi-3rjzqa8ghro.ws-eu102.gitpod.io',
 'localhost', 
 'drf-api-renato-6a4382026611.herokuapp.com',
-os.environ.get('ALLOWED_HOST'),]
+os.environ.get('ALLOWED_HOST'),
+'drf-api-renato-9b9c5c90ac56.herokuapp.com',]
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
