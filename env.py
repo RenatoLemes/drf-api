@@ -4,3 +4,4 @@ os.environ.setdefault("SECRET_KEY", "CreateANEWRandomValueHere")
 # os.environ['SECRET_KEY'] = "13185345"
 os.environ['DEV'] = '1'
 os.environ['DATABASE_URL'] = "postgres://vasbkdsj:QykkSQw2RTVEKu2-pcjD2R45Y0-jCZTF@horton.db.elephantsql.com/vasbkdsj"
+os.environ['CLIENT_ORIGIN'] = "https://moments-renato-c7dffa21f1be.herokuapp.com"
